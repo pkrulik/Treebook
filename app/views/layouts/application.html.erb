@@ -8,7 +8,25 @@
 </head>
 <body>
 
-<%= yield %>
+	<!-- NAV BAR -->
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class = "container">
+		    <a class="brand" href="#">Treebook</a>
+		    <ul class="nav">
+		      <li><%= link_to "All Statuses", statuses_path %></li>
+		    </ul>
+	    </div>
+	  </div>
+	</div>	
+
+	<!-- THIS CENTERS THE CONTENT ON THE PAGE-->
+	<div class = "container">
+	
+		<!-- THIS IS WHERE THE MAIN CONTENT GOES -->
+		<%= yield %>
+	
+	</div>
 
 </body>
 </html>
